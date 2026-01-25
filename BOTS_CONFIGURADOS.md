@@ -96,7 +96,7 @@
 
 ### 🟢 BOT 3: Over 1.5 1T - Alta Probabilidade
 
-**Mercado:** Mais um gol até o fim do primeiro tempo
+**Mercado:** Mais de 1.5 gols no primeiro tempo
 
 **Objetivo:** Buscar jogos com 2+ gols no primeiro tempo (odds geralmente melhores)
 
@@ -386,7 +386,7 @@
 | Média de Gols (Casa) | ≥ | 1.5 |
 
 #### Passo a Passo:
-1. Este bot é para when você quer apostar no resultado final
+1. Este bot é para quando você quer apostar no resultado final
 2. Entra só quando a casa é favorita e está dominando
 3. Ideal para odds de 1.50 a 2.50 com alta confiança
 
