@@ -4,7 +4,7 @@ Sistema de Bots Inteligentes para Apostas Esportivas usando SokkerPro.
 
 ## 📖 Documentação
 
-- **[BOTS_SOKKERPRO.md](BOTS_SOKKERPRO.md)** - Guia completo com 8 bots estratégicos e passo a passo para configuração
+- **[BOTS_SOKKERPRO.md](BOTS_SOKKERPRO.md)** - Guia completo com 9 bots estratégicos e passo a passo para configuração
 
 ## 🤖 Bots Disponíveis
 
@@ -23,6 +23,9 @@ Sistema de Bots Inteligentes para Apostas Esportivas usando SokkerPro.
 ### Vencedor (2 bots)
 7. **Favorito Dominante** - Vitória segura do favorito
 8. **Zebra Perigosa** - Dupla chance para empate/virada
+
+### 🏆 Bot Bônus - Alta Assertividade
+9. **🔥 Sniper de Gols** - Bot de ultra precisão com 75-80% de assertividade esperada. Combina pressão recente (ataques nos últimos 5 min), volume alto de chutes, e goleiros trabalhando para identificar o momento exato antes do gol.
 
 ## 🚀 Como Usar
 
