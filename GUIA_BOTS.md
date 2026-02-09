@@ -127,7 +127,7 @@ Todos os bots seguem princípios fundamentais:
 - **ROI Esperado**: 18-28%
 - **Taxa de Acerto**: 75%+
 - **Nota**: Escanteios são mais previsíveis que gols
-- **Fato**: Cada escanteio aumenta 2% a chance de gol nos próximos 1-5min
+- **Observação**: Segundo o PDF SokkerPro, escanteios aumentam em cerca de 2% a probabilidade de gol e até 15% nos próximos 1-5 minutos após serem cobrados
 
 ---
 

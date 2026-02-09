@@ -162,12 +162,14 @@ Bot 6: Segurança asiática em under, ROI 15-25%
 
 ## 📊 COMPARAÇÃO DE RESULTADOS ESPERADOS
 
-### ANTES (Bots Antigos)
-- ❌ Taxa de Acerto: ~40-50% (muitos reds)
-- ❌ ROI: Negativo ou próximo de 0%
-- ❌ Drawdown: 30-40% (muitas perdas seguidas)
-- ❌ Entradas: 150-200/mês (quantidade sem qualidade)
-- ❌ Confiabilidade: Baixa
+### ANTES (Bots Antigos - Estimativa baseada nos problemas reportados)
+- ❌ Taxa de Acerto: Baixa (muitos reds reportados)
+- ❌ ROI: Negativo ou insatisfatório
+- ❌ Drawdown: Alto (muitas perdas seguidas)
+- ❌ Entradas: Possivelmente excessivas (quantidade sem qualidade)
+- ❌ Confiabilidade: Baixa (2 não funcionavam, 4 com greens ruins)
+
+**Nota**: Valores estimados baseados no problema reportado pelo usuário.
 
 ### DEPOIS (Bots Novos)
 - ✅ Taxa de Acerto: 70-75% (muito mais greens)
