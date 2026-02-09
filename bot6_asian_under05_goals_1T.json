@@ -1,0 +1,158 @@
+{
+  "nome": "Bot 6 - Asian Under 0.5 Gols 1T (Risco Calculado)",
+  "descricao": "Bot asiático para Under 0.5 gols 1T - se 1 gol devolve, 0 gols ganha",
+  "mercado": "Sem mais gols (asiático) até o fim do primeiro tempo",
+  
+  "configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 12,
+      "ate": 40,
+      "justificativa": "Tempo para avaliar padrão defensivo do jogo"
+    },
+    "odd_minima_entrada": 1.30,
+    "valor_entrada": 0,
+    "filtro_placar": {
+      "tipo": "Empate",
+      "justificativa": "0x0 é essencial para under asiático"
+    }
+  },
+  
+  "condicoes_ao_vivo": {
+    "ataques": {
+      "ataques_perigosos_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 8,
+        "justificativa": "Poucos ataques perigosos com proteção asiática"
+      },
+      "ataques_perigosos_5min": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 1.2,
+        "justificativa": "Baixa intensidade recente"
+      },
+      "ataques_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 45,
+        "justificativa": "Volume controlado"
+      }
+    },
+    "chutes": {
+      "chutes_no_gol": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 3,
+        "justificativa": "Poucas finalizações perigosas"
+      },
+      "chutes_dentro_area": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 2,
+        "justificativa": "Raras chances claras"
+      },
+      "total_chutes": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 8,
+        "justificativa": "Volume baixo de tentativas"
+      }
+    },
+    "escanteios": {
+      "escanteios_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 4,
+        "justificativa": "Poucos escanteios aceitável com asiático"
+      }
+    },
+    "defesa": {
+      "defesas_goleiro": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 2,
+        "justificativa": "Poucas defesas = pouca pressão real"
+      }
+    },
+    "outros": {
+      "barra_pressao": {
+        "aplicado_a": "Ambos Times",
+        "minimo": 0,
+        "maximo": 65,
+        "justificativa": "Sem domínio claro de nenhum time"
+      },
+      "faltas": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 8,
+        "justificativa": "Jogo truncado com muitas faltas"
+      }
+    }
+  },
+  
+  "condicoes_pre_jogo": {
+    "prognosticos_gols": {
+      "over_05_1T": {
+        "minimo": 0,
+        "maximo": 50,
+        "justificativa": "Baixa a média probabilidade de gol"
+      },
+      "over_15": {
+        "minimo": 0,
+        "maximo": 55,
+        "justificativa": "Jogo não deve ter muitos gols"
+      }
+    },
+    "prognosticos_resultado": {
+      "empate": {
+        "minimo": 22,
+        "justificativa": "Tendência de equilíbrio"
+      },
+      "casa_ou_fora": {
+        "minimo": 0,
+        "maximo": 75,
+        "justificativa": "Evita apenas favoritos muito fortes"
+      }
+    },
+    "medias_h2h_gols": {
+      "media_gols_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 0.8,
+        "justificativa": "Média baixa histórica"
+      }
+    },
+    "medias_h2h_chutes": {
+      "media_chutes_totais_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 10,
+        "justificativa": "Histórico de baixo volume"
+      }
+    },
+    "medias_h2h_ataques": {
+      "media_ataques_perigosos_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 10,
+        "justificativa": "Poucos ataques perigosos no histórico"
+      }
+    },
+    "medias_h2h_cartoes": {
+      "media_cartoes_amarelos_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 1.5,
+        "justificativa": "Jogos mais truncados/defensivos"
+      }
+    }
+  },
+  
+  "estrategia": {
+    "objetivo": "Green seguro com proteção asiática (70%+ acerto)",
+    "risco": "Baixo a Médio",
+    "roi_esperado": "15-25%",
+    "entrada": "Mais flexível pela proteção do asiático",
+    "vantagem": "Se sair 1 gol recupera stake, precisa 2 gols para perder",
+    "saida": "Monitorar até 42-43min",
+    "observacao": "Excelente para jogos equilibrados de ligas defensivas"
+  }
+}

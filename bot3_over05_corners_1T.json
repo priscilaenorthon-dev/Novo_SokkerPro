@@ -1,0 +1,126 @@
+{
+  "nome": "Bot 3 - Over 0.5 Escanteios 1T (Alta Probabilidade)",
+  "descricao": "Bot para Over 0.5 escanteios no primeiro tempo - alta taxa de acerto",
+  "mercado": "Mais um escanteio até o fim do primeiro tempo",
+  
+  "configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 10,
+      "ate": 42,
+      "justificativa": "Entrada após jogo estabelecido, tempo para escanteio sair"
+    },
+    "odd_minima_entrada": 1.20,
+    "valor_entrada": 0,
+    "filtro_placar": {
+      "tipo": "Qualquer",
+      "justificativa": "Escanteios ocorrem em qualquer placar"
+    }
+  },
+  
+  "condicoes_ao_vivo": {
+    "ataques": {
+      "ataques_perigosos_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 10,
+        "justificativa": "10+ ataques perigosos geram escanteios"
+      },
+      "ataques_perigosos_5min": {
+        "aplicado_a": "Qualquer Time",
+        "minimo": 1.8,
+        "justificativa": "Pressão constante leva a escanteios"
+      },
+      "ataques_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 35,
+        "justificativa": "Volume de ataques aumenta chances de escanteio"
+      }
+    },
+    "chutes": {
+      "chutes_fora_gol": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 2,
+        "justificativa": "Chutes errados podem sair pela linha de fundo"
+      },
+      "chutes_bloqueados": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 1,
+        "justificativa": "Bloqueios geram escanteios"
+      },
+      "total_chutes": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 8,
+        "justificativa": "Volume de finalizações"
+      }
+    },
+    "escanteios": {
+      "escanteios_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 20,
+        "justificativa": "Aceita qualquer quantidade atual"
+      }
+    },
+    "defesa": {
+      "defesas_goleiro": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 1,
+        "justificativa": "Defesas indicam pressão e chances de escanteio"
+      }
+    },
+    "outros": {
+      "barra_pressao": {
+        "aplicado_a": "Qualquer Time",
+        "minimo": 65,
+        "justificativa": "Pressão alta gera escanteios"
+      }
+    }
+  },
+  
+  "condicoes_pre_jogo": {
+    "prognosticos_escanteios": {
+      "prognostico_media_escanteios": {
+        "minimo": 55,
+        "justificativa": "Tendência histórica de escanteios"
+      }
+    },
+    "medias_h2h_escanteios": {
+      "media_escanteios_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 3.5,
+        "justificativa": "Média de 3.5+ escanteios no 1T garante volume"
+      },
+      "media_escanteios": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 8,
+        "justificativa": "Jogo com tendência de escanteios"
+      }
+    },
+    "medias_h2h_ataques": {
+      "media_ataques_perigosos_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 12,
+        "justificativa": "Ataques perigosos geram escanteios"
+      },
+      "media_ataques_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 45,
+        "justificativa": "Alto volume de ataques no histórico"
+      }
+    },
+    "medias_h2h_chutes": {
+      "media_chutes_totais_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 10,
+        "justificativa": "Chutes levam a escanteios"
+      }
+    }
+  },
+  
+  "estrategia": {
+    "objetivo": "Green consistente em escanteios (75%+ taxa de acerto)",
+    "risco": "Baixo",
+    "roi_esperado": "18-28%",
+    "entrada": "Escanteios são mais previsíveis que gols",
+    "nota": "Escanteios aumentam 2% chance de gol nos próximos 1-5min"
+  }
+}

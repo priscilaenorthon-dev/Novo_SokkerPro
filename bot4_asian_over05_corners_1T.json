@@ -1,0 +1,109 @@
+{
+  "nome": "Bot 4 - Asian Over 0.5 Escanteios 1T (Segurança)",
+  "descricao": "Bot asiático para escanteios 1T - se 1 escanteio devolve, 2+ ganha",
+  "mercado": "Mais um escanteio asiático até o fim do primeiro tempo",
+  
+  "configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 8,
+      "ate": 43,
+      "justificativa": "Entrada mais cedo com proteção asiática"
+    },
+    "odd_minima_entrada": 1.15,
+    "valor_entrada": 0,
+    "filtro_placar": {
+      "tipo": "Qualquer",
+      "justificativa": "Placar não influencia tanto escanteios"
+    }
+  },
+  
+  "condicoes_ao_vivo": {
+    "ataques": {
+      "ataques_perigosos_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 8,
+        "justificativa": "8+ ataques perigosos com proteção asiática"
+      },
+      "ataques_perigosos_3min": {
+        "aplicado_a": "Qualquer Time",
+        "minimo": 1.5,
+        "justificativa": "Pressão recente"
+      },
+      "ataques_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 30,
+        "justificativa": "Volume de jogo"
+      }
+    },
+    "chutes": {
+      "total_chutes": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 6,
+        "justificativa": "Finalizações levam a escanteios"
+      },
+      "chutes_fora_gol": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 1,
+        "justificativa": "Chutes errados podem virar escanteio"
+      }
+    },
+    "escanteios": {
+      "escanteios_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 15,
+        "justificativa": "Qualquer quantidade"
+      }
+    },
+    "outros": {
+      "barra_pressao": {
+        "aplicado_a": "Qualquer Time",
+        "minimo": 60,
+        "justificativa": "Pressão moderada suficiente com asiático"
+      }
+    }
+  },
+  
+  "condicoes_pre_jogo": {
+    "prognosticos_escanteios": {
+      "prognostico_media_escanteios": {
+        "minimo": 50,
+        "justificativa": "50%+ é bom com proteção"
+      }
+    },
+    "medias_h2h_escanteios": {
+      "media_escanteios_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 3.0,
+        "justificativa": "Média razoável no 1T"
+      },
+      "media_escanteios": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 7,
+        "justificativa": "Jogos com escanteios"
+      }
+    },
+    "medias_h2h_ataques": {
+      "media_ataques_perigosos_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 10,
+        "justificativa": "Pressão histórica"
+      }
+    },
+    "medias_h2h_chutes": {
+      "media_chutes_totais_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 8,
+        "justificativa": "Volume de finalizações"
+      }
+    }
+  },
+  
+  "estrategia": {
+    "objetivo": "Green seguro com proteção asiática",
+    "risco": "Muito Baixo",
+    "roi_esperado": "10-18%",
+    "entrada": "Condições flexíveis pela proteção",
+    "vantagem": "Se sair 1 escanteio apenas, recupera stake"
+  }
+}
