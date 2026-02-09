@@ -1,0 +1,106 @@
+{
+  "nome": "Bot 1 - Over 0.5 Gols 1T (Conservador)",
+  "descricao": "Bot para entrar em Over 0.5 gols no primeiro tempo com alta probabilidade de green",
+  "mercado": "Mais um gol até o fim do primeiro tempo",
+  
+  "configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 8,
+      "ate": 38,
+      "justificativa": "Evita os primeiros minutos de estudo e garante tempo para o gol acontecer"
+    },
+    "odd_minima_entrada": 1.30,
+    "valor_entrada": 0,
+    "filtro_placar": {
+      "tipo": "Empate",
+      "justificativa": "Jogo 0x0 aumenta probabilidade de gol sair"
+    }
+  },
+  
+  "condicoes_ao_vivo": {
+    "ataques": {
+      "ataques_perigosos_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 8,
+        "justificativa": "Pelo menos 8 ataques perigosos somados indica jogo ofensivo"
+      },
+      "ataques_perigosos_5min": {
+        "aplicado_a": "Qualquer Time",
+        "minimo": 1.5,
+        "justificativa": "Média de 1.5+ ataques perigosos/5min mostra pressão constante"
+      }
+    },
+    "chutes": {
+      "chutes_no_gol": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 3,
+        "justificativa": "Pelo menos 3 chutes no gol indica finalização efetiva"
+      },
+      "chutes_dentro_area": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 2,
+        "justificativa": "Chutes dentro da área têm maior chance de gol"
+      }
+    },
+    "escanteios": {
+      "escanteios_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 2,
+        "justificativa": "2+ escanteios aumentam chance de gol em 30%+"
+      }
+    },
+    "outros": {
+      "barra_pressao": {
+        "aplicado_a": "Qualquer Time",
+        "minimo": 65,
+        "justificativa": "Pressão de 65%+ indica domínio e chances de gol"
+      }
+    }
+  },
+  
+  "condicoes_pre_jogo": {
+    "prognosticos_gols": {
+      "over_05_1T": {
+        "minimo": 55,
+        "justificativa": "55%+ de probabilidade pré-jogo valida a entrada"
+      },
+      "over_15": {
+        "minimo": 60,
+        "justificativa": "Jogo com tendência de gols"
+      }
+    },
+    "prognosticos_resultado": {
+      "casa_ou_fora": {
+        "minimo": 55,
+        "justificativa": "Evita jogos muito equilibrados/defensivos"
+      }
+    },
+    "medias_h2h_gols": {
+      "media_gols_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0.8,
+        "justificativa": "Histórico mostra média razoável de gols no 1T"
+      }
+    },
+    "medias_h2h_chutes": {
+      "media_chutes_totais_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 10,
+        "justificativa": "Média de 10+ chutes no 1T indica jogo ofensivo"
+      },
+      "media_chutes_ao_gol_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 4,
+        "justificativa": "Finalizações no alvo aumentam chance de gol"
+      }
+    }
+  },
+  
+  "estrategia": {
+    "objetivo": "Green com alta taxa de acerto (70%+)",
+    "risco": "Baixo a Médio",
+    "roi_esperado": "15-25%",
+    "entrada": "Aguardar todas as condições serem atendidas",
+    "saida": "Cashout aos 42-43 minutos se ainda 0x0 (opcional)"
+  }
+}

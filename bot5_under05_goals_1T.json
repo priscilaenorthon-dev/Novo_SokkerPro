@@ -1,0 +1,154 @@
+{
+  "nome": "Bot 5 - Under 0.5 Gols 1T (Jogos Defensivos)",
+  "descricao": "Bot para Under 0.5 gols no 1T - entra em jogos travados/defensivos",
+  "mercado": "Sem mais gols até o fim do primeiro tempo",
+  
+  "configuracao_essencial": {
+    "faixa_minutos": {
+      "de": 15,
+      "ate": 38,
+      "justificativa": "Aguarda jogo se estabelecer como defensivo"
+    },
+    "odd_minima_entrada": 1.35,
+    "valor_entrada": 0,
+    "filtro_placar": {
+      "tipo": "Empate",
+      "justificativa": "Jogo 0x0 é ideal para under"
+    }
+  },
+  
+  "condicoes_ao_vivo": {
+    "ataques": {
+      "ataques_perigosos_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 6,
+        "justificativa": "Poucos ataques perigosos = jogo travado"
+      },
+      "ataques_perigosos_5min": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 1.0,
+        "justificativa": "Baixa pressão recente"
+      },
+      "ataques_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 40,
+        "justificativa": "Volume moderado a baixo de ataques"
+      }
+    },
+    "chutes": {
+      "chutes_no_gol": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 2,
+        "justificativa": "Poucas finalizações no alvo"
+      },
+      "chutes_dentro_area": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 1,
+        "justificativa": "Raras chances claras de gol"
+      },
+      "total_chutes": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 6,
+        "justificativa": "Baixo volume de finalizações"
+      }
+    },
+    "escanteios": {
+      "escanteios_totais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 3,
+        "justificativa": "Poucos escanteios = jogo sem pressão"
+      }
+    },
+    "posse": {
+      "passes_certos_pct": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 60,
+        "justificativa": "Jogo controlado, sem correria"
+      }
+    },
+    "outros": {
+      "barra_pressao": {
+        "aplicado_a": "Ambos Times",
+        "minimo": 0,
+        "maximo": 60,
+        "justificativa": "Nenhum time com pressão alta"
+      },
+      "laterais": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 15,
+        "justificativa": "Muitas laterais = jogo truncado"
+      }
+    }
+  },
+  
+  "condicoes_pre_jogo": {
+    "prognosticos_gols": {
+      "over_05_1T": {
+        "minimo": 0,
+        "maximo": 45,
+        "justificativa": "Baixa probabilidade de gol no 1T"
+      },
+      "over_15": {
+        "minimo": 0,
+        "maximo": 50,
+        "justificativa": "Jogo com tendência de poucos gols"
+      }
+    },
+    "prognosticos_resultado": {
+      "empate": {
+        "minimo": 25,
+        "justificativa": "Jogos equilibrados tendem a ser cautelosos"
+      },
+      "casa_ou_fora": {
+        "minimo": 0,
+        "maximo": 70,
+        "justificativa": "Evita jogos muito unilaterais que podem ter gols"
+      }
+    },
+    "medias_h2h_gols": {
+      "media_gols_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 0.7,
+        "justificativa": "Histórico de poucos gols no 1T"
+      }
+    },
+    "medias_h2h_chutes": {
+      "media_chutes_totais_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 8,
+        "justificativa": "Histórico de poucas finalizações"
+      },
+      "media_chutes_ao_gol_1T": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 0,
+        "maximo": 3,
+        "justificativa": "Poucas finalizações no alvo historicamente"
+      }
+    },
+    "medias_h2h_defesa": {
+      "media_desarmes": {
+        "aplicado_a": "Ambos Somados",
+        "minimo": 15,
+        "justificativa": "Times defensivos fazem muitos desarmes"
+      }
+    }
+  },
+  
+  "estrategia": {
+    "objetivo": "Green em jogos travados/defensivos (65%+ acerto)",
+    "risco": "Médio",
+    "roi_esperado": "20-30%",
+    "entrada": "Aguardar confirmação de jogo defensivo",
+    "saida": "Sair aos 40-42min se começar pressão",
+    "observacao": "Ideal para ligas defensivas ou derbys equilibrados"
+  }
+}
